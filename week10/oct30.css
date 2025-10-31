@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+.stage {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 5s infinite;
+}
+
+@keyframes slideshow {
+    0% {background-image: url('a.jpg');}
+    25% {background-image: url('b.jpg');}
+    40% {background-image: url('c.jpg');}
+    65% {background-image: url('d.jpg');}
+    100% {background-image: url('e.jpg');}
+}
