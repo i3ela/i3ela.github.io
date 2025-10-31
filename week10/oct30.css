@@ -7,13 +7,15 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     animation: slideshow 5s infinite;
 }
 
 @keyframes slideshow {
     0% {background-image: url('a.jpg');}
-    25% {background-image: url('b.jpg');}
-    40% {background-image: url('c.jpg');}
-    65% {background-image: url('d.jpg');}
+    30% {background-image: url('b.jpg');}
+    60% {background-image: url('c.jpg');}
+    85% {background-image: url('d.jpg');}
     100% {background-image: url('e.jpg');}
+
 }
