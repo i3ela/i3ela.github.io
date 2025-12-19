@@ -2,9 +2,9 @@
     border: 2px solid greenyellow;
     height: 300px;
     position: relative;
-    background: url(13images/back.webp);
     background-size: 100% 100%;
     transition: border 2s;
+background-image: url(13images/back.webp);
 }
 
 .smalling {
@@ -14,9 +14,6 @@
     opacity: 0.9;
     position: absolute;
     left: 10%;
-    animation-name: explore;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 .smalling>img {
@@ -24,11 +21,33 @@
     height: 100%;
 }
 
-@keyframes explore {
-    0% {left: 10%;} 
-    25%{border:3px dotted greenyellow;transform: rotate(37deg);width: 100%;}
-    30%{border:3px dotted greenyellow;transform: rotate(-30deg);width: 50%;}
-    45%{border:3px dotted greenyellow;transform: rotate(30deg);width: 100%;}
-    50% {left:30%;bottom: 10%;}
-    100% {left:90%;bottom: 0%;}
+.one {
+    animation-name: explore;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
+
+.two {
+    animation-name: explore2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes explore {
+    0% {left: 0%; bottom: 100% opacity: 100%;}
+    25%{border:3px dotted greenyellow; left: 50% ;bottom: 50%; opacity: 0%;}
+    30%{border:3px solid rgb(255, 78, 47);}
+    45%{border:3px dotted greenyellow;}
+    50% {left:30%;bottom: 10%; opacity: 100%;}
+    100% {left:90%;bottom: 0%; opacity: 0%;}
+}
+
+@keyframes explore2 {
+    0% {left: 0%; bottom: 100% opacity: 0%;}
+    25%{border:3px dotted greenyellow; left: 50% ;bottom: 50%; opacity: 100%;}
+    30%{border:3px solid rgb(255, 78, 47);}
+    45%{border:3px dotted greenyellow;}
+    50% {left:30%;bottom: 10%; opacity: 0%;}
+    100% {left:90%;bottom: 0%; opacity: 100%;}
+}
+
