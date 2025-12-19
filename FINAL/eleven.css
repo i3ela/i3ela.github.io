@@ -1,0 +1,21 @@
+body {
+    background-image:url(11images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+.cntr {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.mini {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+}

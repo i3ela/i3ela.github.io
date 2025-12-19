@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 350px;
+    position: relative;
+}
+
+.stage {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 8s infinite;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid blue;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.322);
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2959f886;
+    color: white;
+    padding: 10px 22px;
+}
+
+@keyframes slideshow {
+    0% {background-image: url('12images/1.jpg');}
+    30% {background-image: url('12images/2.jpg');}
+    60% {background-image: url('12images/3.jpg');}
+    100% {background-image: url('12images/4.jpg');}
+}
