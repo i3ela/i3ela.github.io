@@ -34,7 +34,7 @@ background-image: url(13images/back.webp);
 }
 
 @keyframes explore {
-    0% {left: 0%; bottom: 100% opacity: 100%;}
+    0% { left: 0%; bottom: 100%; opacity: 100%; }
     25%{border:3px dotted greenyellow; left: 50% ;bottom: 50%; opacity: 0%;}
     30%{border:3px solid rgb(255, 78, 47);}
     45%{border:3px dotted greenyellow;}
@@ -43,11 +43,12 @@ background-image: url(13images/back.webp);
 }
 
 @keyframes explore2 {
-    0% {left: 0%; bottom: 100% opacity: 0%;}
+    0% { left: 0%; bottom: 100%; opacity: 100%; }
     25%{border:3px dotted greenyellow; left: 50% ;bottom: 50%; opacity: 100%;}
     30%{border:3px solid rgb(255, 78, 47);}
     45%{border:3px dotted greenyellow;}
     50% {left:30%;bottom: 10%; opacity: 0%;}
     100% {left:90%;bottom: 0%; opacity: 100%;}
 }
+
 
